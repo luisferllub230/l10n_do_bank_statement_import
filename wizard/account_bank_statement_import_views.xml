@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_bank_statement_import_inherited_form" model="ir.ui.view">
+        <field name="name">Upload Bank Statements Inherited</field>
+        <field name="model">account.bank.statement.import</field>
+        <field name="arch" type="xml">
+            <form string="Upload Bank Statements">
+                <sheet>
+                    <h2>
+                        You can upload your bank statement using:
+                    </h2>
+                    <ul id="statement_format">
+                        <li>
+                            Comma Separated values (CSV)
+                        </li>
+                    </ul>
+                    <group>
+                        <field colspan="2" name="attachment_ids" nolabel="1" required="1" string="Select Files" widget="many2many_binary"/>
+                        <group colspan="2">
+                            <field invisible="1" name="is_for_credit_card"/>
+                            <label for="statement_year" invisible="is_for_credit_card == False"/>
+                            <div class="d-flex" invisible="is_for_credit_card == False" name="statement_year_div">
+                                <field invisible="is_for_credit_card == False" name="statement_year" required="is_for_credit_card == True"/>
+                                <span class="oe_inline o_form_label mx-3">
+                                    <strong>
+                                        Note:
+                                    </strong>
+                                    We will only take into account the selected year if the bank statements do not have the complete date. 
+                                    Do not import statements from different years.
+                                </span>
+                            </div>
+                        </group>
+                    </group>
+                    <footer>
+                        <button class="btn-primary" data-hotkey="q" name="import_bank_statement" string="Upload" type="object"/>
+                        <button class="btn-secondary" data-hotkey="z" special="cancel" string="Cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

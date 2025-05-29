@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_upload_bank_statements_failed" model="ir.ui.view">
+        <field name="name">Upload Bank Statements Inherited</field>
+        <field name="model">account.bank.statement.faild.import</field>
+        <field name="arch" type="xml">
+            <form string="Upload Bank Statements">
+                <sheet>
+                    <group >
+                      <field name="journal_id" readonly="True"/>
+                    </group>
+                    <notebook>
+                        <page string="Statments list">
+                            <div class="row ms-2 mb-2 d-flex">
+                                <button name="mark_all_line_to_import" type="object" string="Mark all" class="btn-primary mx-2 col-2"/>
+                                <button name="mark_all_like_debit" type="object" string="Mark all like debit" class="btn-primary mx-2 col-2"/>
+                                <button name="mark_all_like_credit" type="object" string="Mark all like credit" class="btn-primary mx-2 col-2"/>
+                            </div>
+                            <field name="line_ids">
+                                <list editable="top" create="False" delete="False">
+                                    <field name="import_faild_statement"/>
+                                    <field name="date" />
+                                    <field name="type_transaction" required="True" />
+                                    <field name="statement_id" readonly="True" />
+                                    <field name="amount" />
+                                    <field name="is_for_credit_card" />
+                                    <field name="payment_ref" />
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                    <footer>
+                        <button name="import_bank_statement" string="Upload" class="btn-primary" type="object" />
+                        <button name="drop_bank_statement" string="Drop" type="object" />
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

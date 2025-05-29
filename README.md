@@ -1,0 +1,1 @@
+l10n_do_bank_statement_import

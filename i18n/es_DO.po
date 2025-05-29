@@ -1,0 +1,545 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_do_bank_statement_import
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e-20240312\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-23 03:32+0000\n"
+"PO-Revision-Date: 2025-01-23 03:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid "%d transactions had already been imported and were ignored."
+msgstr "Ya se habían importado %d transacciones y fueron ignoradas."
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid "1 transaction had already been imported and was ignored."
+msgstr "Ya se había importado 1 transacción y fue ignorada."
+
+#. module: l10n_do_bank_statement_import
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_bank_statement_import_inherited_form
+msgid ""
+"<span class=\"oe_inline o_form_label mx-3\">\n"
+"                                    <strong>\n"
+"                                        Note:\n"
+"                                    </strong>\n"
+"                                    We will only take into account the selected year if the bank statements do not have the complete date. \n"
+"                                    Do not import statements from different years.\n"
+"                                </span>"
+msgstr ""
+"<span class=\"oe_inline o_form_label mx-3\">\n"
+"                                    <strong>\n"
+"                                        Nota:\n"
+"                                    </strong>\n"
+"                                    Solo tomaremos en cuenta el año seleccionado si los extractos bancarios no tienen la fecha completa. \n"
+"                                    No importe extractos de diferentes años.\n"
+"                                </span>"
+
+#. module: l10n_do_bank_statement_import
+#: model:ir.model.constraint,message:l10n_do_bank_statement_import.constraint_account_bank_statement_line_unique_import_id
+msgid "A bank account transactions can be imported only once !"
+msgstr "Una transacción bancaria puede ser importada solo una vez!"
+
+#. module: l10n_do_bank_statement_import
+#: model:ir.model,name:l10n_do_bank_statement_import.model_account_bank_statement_faild_import
+#: model:ir.model,name:l10n_do_bank_statement_import.model_account_bank_statement_faild_import_lines
+msgid "Account Bank Failed Statement Import Lines"
+msgstr "Lineas de extractos bancarios fallidos"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__amount
+#, python-format
+msgid "Amount"
+msgstr "Monto"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_import__attachment_ids
+#, python-format
+msgid "Attachments"
+msgstr "Archivos adjuntos"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/models/account_journal.py:0
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_journal__l10n_do_bank
+#, python-format
+msgid "Bank"
+msgstr "Entidad bancaria"
+
+#. module: l10n_do_bank_statement_import
+#: model:ir.model,name:l10n_do_bank_statement_import.model_account_bank_statement_import
+msgid "Bank Statement Import Wizard"
+msgstr "Importar extracto bancario"
+
+#. module: l10n_do_bank_statement_import
+#: model:ir.model,name:l10n_do_bank_statement_import.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Línea de extracto bancario"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/models/account_journal.py:0
+#: model:ir.model.fields,help:l10n_do_bank_statement_import.field_account_journal__l10n_do_bank
+#, python-format
+msgid "Bank entity to import bank statements"
+msgstr "Entidad bancaria para importar extractos bancarios"
+
+#. module: l10n_do_bank_statement_import
+#: model:ir.model.fields.selection,name:l10n_do_bank_statement_import.selection__account_journal__l10n_do_statement_file_type__csv
+msgid "CSV"
+msgstr ""
+
+#. module: l10n_do_bank_statement_import
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_bank_statement_import_inherited_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_do_bank_statement_import
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_bank_statement_import_inherited_form
+msgid "Comma Separated values (CSV)"
+msgstr "Valores separados por comas (CSV)"
+
+#. module: l10n_do_bank_statement_import
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import__create_uid
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__create_uid
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_import__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_do_bank_statement_import
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import__create_date
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__create_date
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_import__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: model:ir.model.fields.selection,name:l10n_do_bank_statement_import.selection__account_bank_statement_faild_import_lines__type_transaction__credit
+#, python-format
+msgid "Credit"
+msgstr "Credito"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__date
+#, python-format
+msgid "Date"
+msgstr "Fecha"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/models/account_journal.py:0
+#, python-format
+msgid "You must select a bank entity and a statement file type."
+msgstr "Debe seleccionar una entidad bancaria y un tipo de archivo de extracto."
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: model:ir.model.fields.selection,name:l10n_do_bank_statement_import.selection__account_bank_statement_faild_import_lines__type_transaction__debit
+#, python-format
+msgid "Debit"
+msgstr "Debito"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__payment_ref
+#, python-format
+msgid "Description"
+msgstr "Descripcion"
+
+#. module: l10n_do_bank_statement_import
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import__display_name
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__display_name
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_import__display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import_bpd.py:0
+#, python-format
+msgid "Dont have the year of the statement"
+msgstr "No tiene el año del extracto"
+
+#. module: l10n_do_bank_statement_import
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_upload_bank_statements_failed
+msgid "Drop"
+msgstr "Descartar"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#, python-format
+msgid "Failed Statements"
+msgstr "Extractos fallidos"
+
+#. module: l10n_do_bank_statement_import
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import__id
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__id
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_import__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid ""
+"If it contains transactions for more than one account, it must be imported "
+"on each of them."
+msgstr ""
+"Si contiene transacciones de más de una cuenta, se debe importarEn cada una "
+"de ellas."
+
+#. module: l10n_do_bank_statement_import
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_line__unique_import_id
+msgid "Import ID"
+msgstr "ID de importación"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__import_faild_statement
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.journal_dashboard_view_inherit
+#, python-format
+msgid "Import Statement"
+msgstr "Importar extracto bancario"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/models/account_journal.py:0
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__is_for_credit_card
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_import__is_for_credit_card
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_journal__l10n_do_invert_ammounts
+#, python-format
+msgid "Is a credit card?"
+msgstr "¿Es una tarjeta de crédito?"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: model:ir.model,name:l10n_do_bank_statement_import.model_account_journal
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import__journal_id
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__journal_id
+#, python-format
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_do_bank_statement_import
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import__write_uid
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__write_uid
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_import__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: l10n_do_bank_statement_import
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import__write_date
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__write_date
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_import__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import__line_ids
+#, python-format
+msgid "Lines"
+msgstr "Lineas"
+
+#. module: l10n_do_bank_statement_import
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_upload_bank_statements_failed
+msgid "Mark all"
+msgstr "Importar todo"
+
+#. module: l10n_do_bank_statement_import
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_upload_bank_statements_failed
+msgid "Mark all like credit"
+msgstr "Marcar todo como crédito"
+
+#. module: l10n_do_bank_statement_import
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_upload_bank_statements_failed
+msgid "Mark all like debit"
+msgstr "Marcar todo como debito"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/models/account_journal.py:0
+#: model:ir.model.fields,help:l10n_do_bank_statement_import.field_account_journal__l10n_do_invert_ammounts
+#, python-format
+msgid "Mark if this journaal is for a credit card"
+msgstr "Marque si este diario es para una tarjeta de crédito"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#: model:ir.model.fields,help:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__is_for_credit_card
+#: model:ir.model.fields,help:l10n_do_bank_statement_import.field_account_bank_statement_import__is_for_credit_card
+#, python-format
+msgid ""
+"Mark if this journaal is for a credit card, this option will invert the "
+"ammounts the credit passed to the debit and vice versa"
+msgstr ""
+"Marque si este diario es para una tarjeta de crédito, esta opción invierte "
+"los montos el credito pasa a debito y vice versa"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: model:ir.model.fields.selection,name:l10n_do_bank_statement_import.selection__account_bank_statement_faild_import_lines__type_transaction__none
+#, python-format
+msgid "None"
+msgstr "---"
+
+#. module: l10n_do_bank_statement_import
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_bank_statement_import_inherited_form
+msgid "Select Files"
+msgstr "Seleccionar archivos"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__statement_faild_id
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__statement_id
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__statement_import_id
+#, python-format
+msgid "Statement"
+msgstr "Extractos"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/models/account_journal.py:0
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_journal__l10n_do_statement_file_type
+#, python-format
+msgid "Statement file type"
+msgstr "Tipo de archivo del extracto"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/models/account_journal.py:0
+#: model:ir.model.fields,help:l10n_do_bank_statement_import.field_account_journal__l10n_do_statement_file_type
+#, python-format
+msgid "Statement file type to import bank statements"
+msgstr "Tipo de archivo del extracto bancario para importar"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_import__statement_year
+#, python-format
+msgid "Statement year"
+msgstr "Año del extracto"
+
+#. module: l10n_do_bank_statement_import
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_upload_bank_statements_failed
+msgid "Statments list"
+msgstr "Lista de extractos bancarios"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import_bhd.py:0
+#, python-format
+msgid "The account number in the file must be the same as in the journal."
+msgstr "El número de cuenta en el archivo debe ser el mismo que en el diario."
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import_bhd.py:0
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import_brd.py:0
+#, python-format
+msgid "The ammount %s is not valid."
+msgstr "El monto %s no es válido."
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import_bhd.py:0
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import_brd.py:0
+#, python-format
+msgid "The date %s is not valid."
+msgstr "La fecha %s no es válida."
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid "The following files could not be imported:\n"
+msgstr "No se pudieron importar los siguientes archivos:\n"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import_bhd.py:0
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import_bpd.py:0
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import_brd.py:0
+#, python-format
+msgid "There are no data in the file."
+msgstr "No hay datos en el archivo."
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid "This file doesn't contain any statement for account %s."
+msgstr "Este archivo no contiene ningún extracto para la cuenta %s."
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid "This file doesn't contain any transaction for account %s."
+msgstr "Este archivo no contiene ninguna transacción para la cuenta %s."
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__type_transaction
+#, python-format
+msgid "Type Transaction"
+msgstr "Tipo de transacción"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#: model:ir.model.fields,field_description:l10n_do_bank_statement_import.field_account_bank_statement_faild_import_lines__unique_import_id
+#, python-format
+msgid "Unique ID"
+msgstr "ID unico"
+
+#. module: l10n_do_bank_statement_import
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_bank_statement_import_inherited_form
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_upload_bank_statements_failed
+msgid "Upload"
+msgstr "Subir"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/models/account_journal.py:0
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_bank_statement_import_inherited_form
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_upload_bank_statements_failed
+#, python-format
+msgid "Upload Bank Statements"
+msgstr "Cargar extractos bancarios"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid "View successfully imported statements"
+msgstr "Ver estados de cuenta importados exitosamente"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid ""
+"We could not import some lines please check and import manually the "
+"remaining lines %s lines"
+msgstr ""
+"No pudimos importar algunas líneas, por favor revisa y importa manualmente "
+"las líneas restantes %s lineas"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid "You already have imported that file."
+msgstr "Ya has importado ese archivo."
+
+#. module: l10n_do_bank_statement_import
+#: model_terms:ir.ui.view,arch_db:l10n_do_bank_statement_import.account_bank_statement_import_inherited_form
+msgid "You can upload your bank statement using:"
+msgstr "Puedes cargar tu extracto bancario usando:"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid "You have to set a Default Account for the journal: %s"
+msgstr "Debes configurar una cuenta predeterminada para el diario: %s"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid "You have to upload a file."
+msgstr "Tienes que subir un archivo."
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid "You have to upload only one statement type"
+msgstr "Solo debe subir un tipo de extracto bancario"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#, python-format
+msgid "You must select a date to import"
+msgstr "Se debe seleccionar una fecha para importar"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid ""
+"You must select a file with the correct type or change the file import "
+"statement type in the journal."
+msgstr ""
+"Debe seleccionar un archivo con el tipo correcto o cambiar la importación "
+"del archivo tipo de declaración en el diario."
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#, python-format
+msgid "You must select a type of transaction to import"
+msgstr "Se debe seleccionar un tipo de transacción para importar"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#, python-format
+msgid "You must select an amount to import"
+msgstr "Se debe seleccionar un monto para importar"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_faild_import.py:0
+#, python-format
+msgid "You must select at least one statement to import"
+msgstr "Se debe seleccionar al menos un extracto bancario para importar"
+
+#. module: l10n_do_bank_statement_import
+#. odoo-python
+#: code:addons/l10n_do_bank_statement_import/wizard/account_bank_statement_import.py:0
+#, python-format
+msgid "You uploaded an invalid or empty file."
+msgstr "Este archivo es inválido o vací."

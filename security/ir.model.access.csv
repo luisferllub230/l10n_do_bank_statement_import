@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+account_bank_statement_import,account_bank_statement_import_wizard,model_account_bank_statement_import,,1,1,1,1
+account_bank_statement_import_faild,account_bank_statement_import_faild,model_account_bank_statement_faild_import,,1,1,1,1
+account_bank_statement_import_faild_lines,account_bank_statement_import_faild_lines,model_account_bank_statement_faild_import_lines,,1,1,1,1

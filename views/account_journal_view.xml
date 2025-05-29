@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_journal_form_inherited" model="ir.ui.view">
+        <field name="name">view.account.journal.form.inherited</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group/field[@name='bank_statements_source']" position="after">
+                <field name="l10n_do_bank"/>
+                <field invisible="l10n_do_bank == False" name="l10n_do_statement_file_type" required="l10n_do_bank != False"/>
+                <field name="l10n_do_invert_ammounts"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="journal_dashboard_view_inherit" model="ir.ui.view">
+        <field name="name">account.journal.dashboard.kanban.inherit</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.account_journal_dashboard_kanban_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//t[@t-name='JournalBodyBankCash']//div[@name='kanban_primary_right']" position="inside">
+                <div groups="account.group_account_invoice" name="bank_statement_create_button">
+                    <a name="import_statement" type="object">
+                        Import Statement
+                    </a>
+                </div>
+            </xpath>
+            <xpath expr='//div[@name="bank_customer_payment"]' position="before">
+                <div t-if="journal_type == 'bank'">
+                    <a name="import_statement" type="object">
+                        Import Statement
+                    </a>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
