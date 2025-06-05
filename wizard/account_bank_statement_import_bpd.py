@@ -78,6 +78,10 @@ class AccountBanckStatementImportBpd(models.TransientModel):
                     _date = body[date_header_index] + f'/{self.statement_year}'
                 
                 _date = self._formated_date(_date, current_format='%d/%m/%Y')
+                if not _date:
+                    _date = ''
+                    raise UserError(_("The date %s is not valid") % body[date_header_index])
+                 
                 _unique_import_id = "%s-%s-%s-%s-%s-%s-%s" % (BANK_ENTITY, _date, _ref, _ammount, _is_credit_or_debit, _serial, i)
                 data.append({
                     'date': _date,
